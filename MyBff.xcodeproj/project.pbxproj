@@ -69,7 +69,7 @@
 				00D010E628FEA3D20001DAD9 /* Info.plist */,
 				0010DD7628FED5E8006D1685 /* Sentiments.swift */,
 			);
-			path = MyBff;
+			name = MyBff;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,7 +301,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y8VK66VN5Y;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyBff/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -329,7 +329,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y8VK66VN5Y;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyBff/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

@@ -6,16 +6,18 @@
 //
 
 import Foundation
+import UIKit
 
 enum Sentiments {
     case happy
     case sad
     
-    var imageAI: UIImage {
+    var imageAI: UIImage? {
         switch self {
         case .happy:
-                return UIImage(named: "happy")
+            return UIImage(named: "happy")
         case .sad:
             return UIImage(named: "sad")
+        }
     }
 }
