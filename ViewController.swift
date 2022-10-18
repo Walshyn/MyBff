@@ -12,10 +12,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var avatarIA: UIImageView!
     @IBOutlet var iaResponse: UILabel!
     @IBOutlet var usrField: UITextField!
+    
+    private let openAI : NetworkSettings = NetworkSettings()
+    
     override func viewDidLoad() {
     
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         usrField.delegate = self
         
@@ -23,8 +25,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
-        iaResponse.text = ""
-        sentiments()
+        iaResponse.text = recoverOpenAIResponse(prompt: textField.text ?? "")
+        //sentiments()
         return true
     }
     
@@ -37,5 +39,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
             iaResponse.text = "I'm so happy for you, what're your plans for today?"
         }
     }
+    
+    private func recoverOpenAIResponse(name : String = "You", prompt : String) -> String?{
+        if(prompt.isEmpty){
+            print("Error: prompt is empty")
+            return ""
+        }
+        else
+        {
+            let prompt = "\(name): \(prompt)\nFriend:"
+            return openAI.processPrompt(prompt: prompt)
+        }
+    }
+    
 }
 
