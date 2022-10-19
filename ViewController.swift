@@ -29,7 +29,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         sentime.predictSentiment(from: textField.text!)
-        iaResponse.text = recoverOpenAIResponse(prompt: textField.text ?? "")
+        iaResponse.text = friendManager.recoverOpenAIResponse(prompt: textField.text ?? "")
         sentiments()
         return true
     }
