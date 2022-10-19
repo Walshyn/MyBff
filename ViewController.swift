@@ -14,29 +14,31 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var usrField: UITextField!
     
     private let openAI : NetworkSettings = NetworkSettings()
+    private let sentime = SentimentsRecognizer()
     
     override func viewDidLoad() {
     
         super.viewDidLoad()
         
         usrField.delegate = self
+        
+        
     }
+
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+        sentime.predictSentiment(from: textField.text!)
         iaResponse.text = recoverOpenAIResponse(prompt: textField.text ?? "")
-        //sentiments()
+        sentiments()
+        
+        
+    
         return true
     }
     
     func sentiments(){
-        if usrField.text!.localizedCaseInsensitiveContains("not"){
-            avatarIA.image = UIImage(named: "sad")
-            iaResponse.text = "Too bad, what's happening?"
-        }else if usrField.text!.localizedCaseInsensitiveContains("happy"){
-            avatarIA.image = UIImage(named: "happy")
-            iaResponse.text = "I'm so happy for you, what're your plans for today?"
-        }
+        
     }
     
     private func recoverOpenAIResponse(name : String = "Moi", prompt : String) -> String?{
@@ -47,9 +49,23 @@ class ViewController: UIViewController, UITextFieldDelegate {
         else
         {
             let prompt = "\(name): \(prompt)\nAmi:"
+            print(prompt)
             return openAI.processPrompt(prompt: prompt)
         }
     }
     
+    func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
+    
+        var sentimentsReco = SentimentsRecognizer()
+        var sentiment = sentimentsReco.predictSentiment(from: textField.text!)
+        print(sentiment)
+        switch sentiment{
+        case .sad:
+            avatarIA.image = Sentiments.sad.imageAI
+        case .neutral:
+            avatarIA.image = Sentiments.neutral.imageAI
+        case .happy:
+            avatarIA.image = Sentiments.happy.imageAI
+        }
+    }
 }
-

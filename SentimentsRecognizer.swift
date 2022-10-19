@@ -30,14 +30,14 @@ final class SentimentsRecognizer{
                 throw Error.featuresMissing
             }
             
-            let output = try model.prediction(input: inputFeatures)
+            let output = try model.prediction(input: .init(text: text))
+            switch output.featureValue(for: "label") {
+            case MLFeatureValue(string: "positive"):
             
-            switch output.classLabel {
-            case "positive" || "happy":
                 return .happy
-            case "negative" || "sad":
+            case MLFeatureValue(string: "negative"):
                 return .sad
-            case "neutral":
+            default:
                 return .neutral
             }
         }catch{
@@ -60,7 +60,8 @@ private extension SentimentsRecognizer{
             guard token.count >= 3 else
             {
                 return
-            } if let value = wordCounts[token]{
+            }
+            if let value = wordCounts[token]{
                 wordCounts[token] = value + 1.0
             }else {
                 wordCounts[token] = 1.0
