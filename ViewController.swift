@@ -20,7 +20,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         usrField.delegate = self
-        
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

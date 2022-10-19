@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000B4A5C28FFDB09006A79B3 /* SentimentsMdl.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 000B4A5B28FFDB09006A79B3 /* SentimentsMdl.mlmodel */; };
 		0010DD7728FED5E8006D1685 /* Sentiments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0010DD7628FED5E8006D1685 /* Sentiments.swift */; };
+		00179E4C28FFD3C600C711D7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 00179E4B28FFD3C600C711D7 /* Alamofire */; };
 		006A301F28FECD2100EF1F1B /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 006A301E28FECD2100EF1F1B /* MessageKit */; };
 		00D010D928FEA3D10001DAD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D010D828FEA3D10001DAD9 /* AppDelegate.swift */; };
 		00D010DB28FEA3D10001DAD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D010DA28FEA3D10001DAD9 /* SceneDelegate.swift */; };
@@ -15,12 +17,11 @@
 		00D010E028FEA3D10001DAD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D010DE28FEA3D10001DAD9 /* Main.storyboard */; };
 		00D010E228FEA3D20001DAD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D010E128FEA3D20001DAD9 /* Assets.xcassets */; };
 		00D010E528FEA3D20001DAD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D010E328FEA3D20001DAD9 /* LaunchScreen.storyboard */; };
-		F4A5F9AE28FFDB4900ABD0FC /* FriendManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A5F9AD28FFDB4900ABD0FC /* FriendManager.swift */; };
 		F4CC2FD628FEED7400C011F5 /* NetworkSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CC2FD528FEED7400C011F5 /* NetworkSettings.swift */; };
-		F4CC2FD928FEEDC800C011F5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F4CC2FD828FEEDC800C011F5 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		000B4A5B28FFDB09006A79B3 /* SentimentsMdl.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = SentimentsMdl.mlmodel; path = ../SentimentsMdl.mlmodel; sourceTree = "<group>"; };
 		0010DD7628FED5E8006D1685 /* Sentiments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentiments.swift; sourceTree = SOURCE_ROOT; };
 		00D010D528FEA3D10001DAD9 /* MyBff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00D010D828FEA3D10001DAD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -30,7 +31,6 @@
 		00D010E128FEA3D20001DAD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00D010E428FEA3D20001DAD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00D010E628FEA3D20001DAD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F4A5F9AD28FFDB4900ABD0FC /* FriendManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendManager.swift; sourceTree = "<group>"; };
 		F4CC2FD528FEED7400C011F5 /* NetworkSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -40,7 +40,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				006A301F28FECD2100EF1F1B /* MessageKit in Frameworks */,
-				F4CC2FD928FEEDC800C011F5 /* Alamofire in Frameworks */,
+				00179E4C28FFD3C600C711D7 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +66,7 @@
 		00D010D728FEA3D10001DAD9 /* MyBff */ = {
 			isa = PBXGroup;
 			children = (
+				000B4A5B28FFDB09006A79B3 /* SentimentsMdl.mlmodel */,
 				F4CC2FD528FEED7400C011F5 /* NetworkSettings.swift */,
 				00D010D828FEA3D10001DAD9 /* AppDelegate.swift */,
 				00D010DA28FEA3D10001DAD9 /* SceneDelegate.swift */,
@@ -75,7 +76,6 @@
 				00D010E328FEA3D20001DAD9 /* LaunchScreen.storyboard */,
 				00D010E628FEA3D20001DAD9 /* Info.plist */,
 				0010DD7628FED5E8006D1685 /* Sentiments.swift */,
-				F4A5F9AD28FFDB4900ABD0FC /* FriendManager.swift */,
 			);
 			name = MyBff;
 			sourceTree = "<group>";
@@ -98,7 +98,7 @@
 			name = MyBff;
 			packageProductDependencies = (
 				006A301E28FECD2100EF1F1B /* MessageKit */,
-				F4CC2FD828FEEDC800C011F5 /* Alamofire */,
+				00179E4B28FFD3C600C711D7 /* Alamofire */,
 			);
 			productName = MyBff;
 			productReference = 00D010D528FEA3D10001DAD9 /* MyBff.app */;
@@ -130,7 +130,7 @@
 			mainGroup = 00D010CC28FEA3D10001DAD9;
 			packageReferences = (
 				006A301D28FECD2100EF1F1B /* XCRemoteSwiftPackageReference "MessageKit" */,
-				F4CC2FD728FEEDC800C011F5 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				00179E4A28FFD3C600C711D7 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 00D010D628FEA3D10001DAD9 /* Products */;
 			projectDirPath = "";
@@ -160,8 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				00D010DD28FEA3D10001DAD9 /* ViewController.swift in Sources */,
-				F4A5F9AE28FFDB4900ABD0FC /* FriendManager.swift in Sources */,
 				F4CC2FD628FEED7400C011F5 /* NetworkSettings.swift in Sources */,
+				000B4A5C28FFDB09006A79B3 /* SentimentsMdl.mlmodel in Sources */,
 				0010DD7728FED5E8006D1685 /* Sentiments.swift in Sources */,
 				00D010D928FEA3D10001DAD9 /* AppDelegate.swift in Sources */,
 				00D010DB28FEA3D10001DAD9 /* SceneDelegate.swift in Sources */,
@@ -384,6 +384,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		00179E4A28FFD3C600C711D7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		006A301D28FECD2100EF1F1B /* XCRemoteSwiftPackageReference "MessageKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/MessageKit/MessageKit";
@@ -392,26 +400,18 @@
 				minimumVersion = 4.0.0;
 			};
 		};
-		F4CC2FD728FEEDC800C011F5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		00179E4B28FFD3C600C711D7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00179E4A28FFD3C600C711D7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		006A301E28FECD2100EF1F1B /* MessageKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 006A301D28FECD2100EF1F1B /* XCRemoteSwiftPackageReference "MessageKit" */;
 			productName = MessageKit;
-		};
-		F4CC2FD828FEEDC800C011F5 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F4CC2FD728FEEDC800C011F5 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
