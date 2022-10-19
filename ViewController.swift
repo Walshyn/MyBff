@@ -13,8 +13,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var iaResponse: UILabel!
     @IBOutlet var usrField: UITextField!
     
-    private let openAI : NetworkSettings = NetworkSettings()
     private let sentime = SentimentsRecognizer()
+    private let friendManager : FriendManager = FriendManager()
     
     override func viewDidLoad() {
     
@@ -31,27 +31,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         sentime.predictSentiment(from: textField.text!)
         iaResponse.text = recoverOpenAIResponse(prompt: textField.text ?? "")
         sentiments()
-        
-        
-    
         return true
     }
     
     func sentiments(){
         
-    }
-    
-    private func recoverOpenAIResponse(name : String = "Moi", prompt : String) -> String?{
-        if(prompt.isEmpty){
-            print("Error: prompt is empty")
-            return ""
-        }
-        else
-        {
-            let prompt = "\(name): \(prompt)\nAmi:"
-            print(prompt)
-            return openAI.processPrompt(prompt: prompt)
-        }
     }
     
     func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {

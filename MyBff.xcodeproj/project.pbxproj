@@ -19,6 +19,7 @@
 		00D010E228FEA3D20001DAD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D010E128FEA3D20001DAD9 /* Assets.xcassets */; };
 		00D010E528FEA3D20001DAD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D010E328FEA3D20001DAD9 /* LaunchScreen.storyboard */; };
 		F4CC2FD628FEED7400C011F5 /* NetworkSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CC2FD528FEED7400C011F5 /* NetworkSettings.swift */; };
+		F4ED066128FFE72200C3B61B /* FriendManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4ED066028FFE72200C3B61B /* FriendManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		00D010E428FEA3D20001DAD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00D010E628FEA3D20001DAD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4CC2FD528FEED7400C011F5 /* NetworkSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSettings.swift; sourceTree = "<group>"; };
+		F4ED066028FFE72200C3B61B /* FriendManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		00D010D728FEA3D10001DAD9 /* MyBff */ = {
 			isa = PBXGroup;
 			children = (
+				F4ED066028FFE72200C3B61B /* FriendManager.swift */,
 				000B4A5B28FFDB09006A79B3 /* SentimentsMdl.mlmodel */,
 				F4CC2FD528FEED7400C011F5 /* NetworkSettings.swift */,
 				00D010D828FEA3D10001DAD9 /* AppDelegate.swift */,
@@ -163,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00D010DD28FEA3D10001DAD9 /* ViewController.swift in Sources */,
+				F4ED066128FFE72200C3B61B /* FriendManager.swift in Sources */,
 				F4CC2FD628FEED7400C011F5 /* NetworkSettings.swift in Sources */,
 				000B4A5C28FFDB09006A79B3 /* SentimentsMdl.mlmodel in Sources */,
 				0010DD7728FED5E8006D1685 /* Sentiments.swift in Sources */,

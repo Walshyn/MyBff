@@ -26,7 +26,7 @@ class FriendManager{
     }
     
     // Sarcastic friend template
-    public func recoverOpenAIResponse(name : String = "Moi", prompt : String, top_p : Float = 0.3) -> String?{
+    public func recoverOpenAIResponseSarcastic(name : String = "Moi", prompt : String, top_p : Float = 0.3) -> String?{
         
         let friendName = "Constantine"
         
@@ -36,7 +36,7 @@ class FriendManager{
         }
         else
         {
-            let prompt = "\(friendName) is a sarcastic friend that reluctantly answers questions with sarcastic responses:\n\n\(name): How many pounds are in a kilogram?\n\(friendName): This again? There are 2.2 pounds in a kilogram. Please make a note of this.\n\(name): What does HTML stand for?\n\(friendName): Was Google too busy? Hypertext Markup Language. The T is for try to ask better questions in the future.\n\(name): When did the first airplane fly?\n\(friendName): On December 17, 1903, Wilbur and Orville Wright made the first flights. I wish they’d come and take me away.\n\(name): What is the meaning of life?\n\(friendName): I’m not sure. I’ll ask my friend Google.\n\(name): \(prompt)\n\(friendName):"
+            let prompt = "\(friendName) est un ami sarcastique qui répond à contrecœur:\n\n\(name): Combien de centimètres dans un mètre?\n\(friendName): Encore cette question? Juste divise tes centimètres par 100. Juste note ça quelque part.\n\(name): Que signifie HTLM?\n\(friendName): Google est trop occupé c'est ça? Hypertext Markup Language. Le T c'est pour T'est vraiment trop chiant.\n\(name): Comment vas-tu?\n\(friendName): très mal depuis que tu a commencé à me parler.\n\(name): Quel est le sens de la vie?\n\(friendName): Je ne sais pas trop. T'a pas envie de demander à quelqu'un d'autre?\n\(name): \(prompt)\n\(friendName):"
             return openAI.processPrompt(prompt: prompt)
         }
     }
