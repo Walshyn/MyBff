@@ -15,6 +15,7 @@
 		00D010E028FEA3D10001DAD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D010DE28FEA3D10001DAD9 /* Main.storyboard */; };
 		00D010E228FEA3D20001DAD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00D010E128FEA3D20001DAD9 /* Assets.xcassets */; };
 		00D010E528FEA3D20001DAD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00D010E328FEA3D20001DAD9 /* LaunchScreen.storyboard */; };
+		F4A5F9AE28FFDB4900ABD0FC /* FriendManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A5F9AD28FFDB4900ABD0FC /* FriendManager.swift */; };
 		F4CC2FD628FEED7400C011F5 /* NetworkSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CC2FD528FEED7400C011F5 /* NetworkSettings.swift */; };
 		F4CC2FD928FEEDC800C011F5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F4CC2FD828FEEDC800C011F5 /* Alamofire */; };
 /* End PBXBuildFile section */
@@ -29,6 +30,7 @@
 		00D010E128FEA3D20001DAD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00D010E428FEA3D20001DAD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00D010E628FEA3D20001DAD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4A5F9AD28FFDB4900ABD0FC /* FriendManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendManager.swift; sourceTree = "<group>"; };
 		F4CC2FD528FEED7400C011F5 /* NetworkSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 				00D010E328FEA3D20001DAD9 /* LaunchScreen.storyboard */,
 				00D010E628FEA3D20001DAD9 /* Info.plist */,
 				0010DD7628FED5E8006D1685 /* Sentiments.swift */,
+				F4A5F9AD28FFDB4900ABD0FC /* FriendManager.swift */,
 			);
 			name = MyBff;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00D010DD28FEA3D10001DAD9 /* ViewController.swift in Sources */,
+				F4A5F9AE28FFDB4900ABD0FC /* FriendManager.swift in Sources */,
 				F4CC2FD628FEED7400C011F5 /* NetworkSettings.swift in Sources */,
 				0010DD7728FED5E8006D1685 /* Sentiments.swift in Sources */,
 				00D010D928FEA3D10001DAD9 /* AppDelegate.swift in Sources */,

@@ -40,14 +40,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    private func recoverOpenAIResponse(name : String = "You", prompt : String) -> String?{
+    private func recoverOpenAIResponse(name : String = "Moi", prompt : String) -> String?{
         if(prompt.isEmpty){
             print("Error: prompt is empty")
             return ""
         }
         else
         {
-            let prompt = "\(name): \(prompt)\nFriend:"
+            let prompt = "\(name): \(prompt)\nAmi:"
             return openAI.processPrompt(prompt: prompt)
         }
     }
