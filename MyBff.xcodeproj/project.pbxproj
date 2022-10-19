@@ -11,6 +11,7 @@
 		0010DD7728FED5E8006D1685 /* Sentiments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0010DD7628FED5E8006D1685 /* Sentiments.swift */; };
 		00179E4C28FFD3C600C711D7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 00179E4B28FFD3C600C711D7 /* Alamofire */; };
 		006A301F28FECD2100EF1F1B /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 006A301E28FECD2100EF1F1B /* MessageKit */; };
+		00C705BA28FFDF0600FA5744 /* SentimentsRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C705B928FFDF0600FA5744 /* SentimentsRecognizer.swift */; };
 		00D010D928FEA3D10001DAD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D010D828FEA3D10001DAD9 /* AppDelegate.swift */; };
 		00D010DB28FEA3D10001DAD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D010DA28FEA3D10001DAD9 /* SceneDelegate.swift */; };
 		00D010DD28FEA3D10001DAD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D010DC28FEA3D10001DAD9 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		000B4A5B28FFDB09006A79B3 /* SentimentsMdl.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = SentimentsMdl.mlmodel; path = ../SentimentsMdl.mlmodel; sourceTree = "<group>"; };
 		0010DD7628FED5E8006D1685 /* Sentiments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentiments.swift; sourceTree = SOURCE_ROOT; };
+		00C705B928FFDF0600FA5744 /* SentimentsRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentimentsRecognizer.swift; sourceTree = "<group>"; };
 		00D010D528FEA3D10001DAD9 /* MyBff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00D010D828FEA3D10001DAD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00D010DA28FEA3D10001DAD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				00D010E328FEA3D20001DAD9 /* LaunchScreen.storyboard */,
 				00D010E628FEA3D20001DAD9 /* Info.plist */,
 				0010DD7628FED5E8006D1685 /* Sentiments.swift */,
+				00C705B928FFDF0600FA5744 /* SentimentsRecognizer.swift */,
 			);
 			name = MyBff;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				0010DD7728FED5E8006D1685 /* Sentiments.swift in Sources */,
 				00D010D928FEA3D10001DAD9 /* AppDelegate.swift in Sources */,
 				00D010DB28FEA3D10001DAD9 /* SceneDelegate.swift in Sources */,
+				00C705BA28FFDF0600FA5744 /* SentimentsRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

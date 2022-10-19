@@ -11,6 +11,7 @@ import UIKit
 enum Sentiments {
     case happy
     case sad
+    case neutral
     
     var imageAI: UIImage? {
         switch self {
@@ -18,6 +19,8 @@ enum Sentiments {
             return UIImage(named: "happy")
         case .sad:
             return UIImage(named: "sad")
+        case .neutral:
+            return UIImage(named: "neutral")
         }
     }
 }
