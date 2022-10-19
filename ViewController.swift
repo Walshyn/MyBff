@@ -13,7 +13,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var iaResponse: UILabel!
     @IBOutlet var usrField: UITextField!
     
-    private let openAI : NetworkSettings = NetworkSettings()
+    private let friendManager : FriendManager = FriendManager()
     
     override func viewDidLoad() {
     
@@ -24,7 +24,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
-        iaResponse.text = recoverOpenAIResponse(prompt: textField.text ?? "")
+        iaResponse.text = friendManager.recoverOpenAIResponse(prompt: textField.text ?? "")
         //sentiments()
         return true
     }
@@ -36,18 +36,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }else if usrField.text!.localizedCaseInsensitiveContains("happy"){
             avatarIA.image = UIImage(named: "happy")
             iaResponse.text = "I'm so happy for you, what're your plans for today?"
-        }
-    }
-    
-    private func recoverOpenAIResponse(name : String = "Moi", prompt : String) -> String?{
-        if(prompt.isEmpty){
-            print("Error: prompt is empty")
-            return ""
-        }
-        else
-        {
-            let prompt = "\(name): \(prompt)\nAmi:"
-            return openAI.processPrompt(prompt: prompt)
         }
     }
     
